@@ -1,4 +1,5 @@
 import { X } from "lucide-react";
+import shbBackground from "@/assets/shb-background.png";
 
 const BrowserMockup = () => {
   return (
@@ -15,9 +16,12 @@ const BrowserMockup = () => {
         <div className="flex-1 bg-browser-bar rounded h-6" />
       </div>
       
-      {/* Browser Content */}
-      <div className="bg-card aspect-[16/10] flex items-center justify-center">
-        <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-error-icon flex items-center justify-center shadow-lg">
+      {/* Browser Content with SHB Background */}
+      <div 
+        className="aspect-[16/10] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${shbBackground})` }}
+      >
+        <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-error-icon flex items-center justify-center shadow-2xl">
           <X className="w-16 h-16 md:w-20 md:h-20 text-destructive-foreground stroke-[3]" />
         </div>
       </div>

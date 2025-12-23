@@ -16,11 +16,11 @@ const Forbidden = () => {
       <div className="min-h-screen bg-background">
         {/* Header */}
         <header className="border-b border-border bg-card">
-          <div className="container mx-auto px-4 py-4">
+          <div className="container mx-auto px-4 py-5">
             <img 
               src={shbLogo} 
               alt="SHB Logo" 
-              className="h-10 md:h-12 w-auto"
+              className="h-14 md:h-16 lg:h-20 w-auto"
             />
           </div>
         </header>
